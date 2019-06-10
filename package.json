@@ -50,5 +50,8 @@
     "nodes": {
       "ecb-euro-exchange-rates": "dist/ecb-euro-exchange-rates.js"
     }
+  },
+  "engines": {
+    "node": ">=8.15.1"
   }
 }
