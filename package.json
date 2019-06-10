@@ -1,16 +1,32 @@
 {
   "name": "node-red-contrib-ecb-euro-exchange-rates",
   "version": "1.0.0",
-  "description": "Node RED node to access the Euro Exchange Rates by ECB",
+  "description": "Node-RED node to access the Euro Exchange Rates by ECB",
   "author": "Philipp Katz",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qqilihq/node-red-contrib-ecb-euro-exchange-rates/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/qqilihq/node-red-contrib-ecb-euro-exchange-rates.git"
+  },
+  "keywords": [
+    "node-red",
+    "euro",
+    "currency",
+    "rates",
+    "ecb",
+    "typescript"
+  ],
   "scripts": {
     "lint": "tslint -p tsconfig.json 'lib/**/*.ts' 'test/**/*.ts'",
     "build": "run-p build:*",
     "build:tsc": "tsc -p tsconfig.build.json",
     "build:copyfiles": "cpx 'src/**/!(*.ts)' ./dist",
     "clean": "rimraf ./dist",
-    "test": "mocha"
+    "test": "mocha",
+    "preversion": "run-s clean lint test build"
   },
   "dependencies": {
     "ecb-euro-exchange-rates": "^1.1.1"
