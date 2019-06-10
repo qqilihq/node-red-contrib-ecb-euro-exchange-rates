@@ -1,5 +1,7 @@
 # Euro Exchange Rates by ECB for Node RED
 
+[![Run Status](https://api.shippable.com/projects/5cfe1574b875100006726d8d/badge?branch=master)]()
+[![Coverage Badge](https://api.shippable.com/projects/5cfe1574b875100006726d8d/coverageBadge?branch=master)]()
 [![npm version](https://badge.fury.io/js/node-red-contrib-ecb-euro-exchange-rates.svg)](https://badge.fury.io/js/node-red-contrib-ecb-euro-exchange-rates)
 
 [Node-RED](https://nodered.org) plugin to retrieve Euro foreign exchange reference rates from an [API](http://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) provided by the European Central Bank.
