@@ -23,8 +23,10 @@ describe('ecb-euro-exchange-rates Node', () => {
   });
 
   it('should make payload ECB rates', done => {
-    const flow = [{ id: 'n1', type: 'ecb-euro-exchange-rates', name: 'test name', wires: [['n2']] },
-    { id: 'n2', type: 'helper' }];
+    const flow = [
+      { id: 'n1', type: 'ecb-euro-exchange-rates', name: 'test name', wires: [['n2']], datatype: 'current' },
+      { id: 'n2', type: 'helper' }
+    ];
     helper.load(ecbEuroExchangesRatesNode, flow, () => {
       const n2 = helper.getNode('n2');
       const n1 = helper.getNode('n1');
