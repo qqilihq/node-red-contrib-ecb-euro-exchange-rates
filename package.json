@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-ecb-euro-exchange-rates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node-RED node to access the Euro Exchange Rates by ECB",
   "author": "Philipp Katz",
   "license": "MIT",
